@@ -3,6 +3,7 @@ import 'package:booking/screens/ticket_view.dart';
 import 'package:booking/utils/app_info_list.dart';
 import 'package:booking/utils/app_layout.dart';
 import 'package:booking/utils/app_styles.dart';
+import 'package:booking/widgets/app_double_text_widget.dart';
 import 'package:booking/widgets/text_widget.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
@@ -62,22 +63,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const Gap(40),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Upcoming Flights", style: Styles.headLineStyle2),
-                    InkWell(
-                      onTap: () {
-                        print("You are tapped!");
-                      },
-                      child: Text(
-                        "View All",
-                        style: Styles.textStyle
-                            .copyWith(color: Styles.primaryColor),
-                      ),
-                    )
-                  ],
-                ),
+                const AppDoubleTextWidget(label: "Upcoming flights"),
               ],
             ),
           ),
@@ -91,27 +77,8 @@ class HomeScreen extends StatelessWidget {
           ),
           const Gap(15),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Hotels", style: Styles.headLineStyle2),
-                    InkWell(
-                      onTap: () {
-                        print("You are tapped!");
-                      },
-                      child: Text(
-                        "View All",
-                        style: Styles.textStyle
-                            .copyWith(color: Styles.primaryColor),
-                      ),
-                    )
-                  ],
-                ),
-              ],
-            ),
+            padding: EdgeInsets.symmetric(horizontal: AppLayout.getWidtht(20)),
+            child: const AppDoubleTextWidget(label: "Hotels"),
           ),
           const Gap(15),
           SingleChildScrollView(
