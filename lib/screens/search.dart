@@ -82,6 +82,27 @@ class SearchScreen extends StatelessWidget {
             ),
           ),
           Gap(AppLayout.getHeight(20)),
+          OutlinedButton(
+            onPressed: () {
+              print("Finding tickets...");
+            },
+            style: OutlinedButton.styleFrom(
+                fixedSize:
+                    Size(AppLayout.getWidtht(400), AppLayout.getHeight(55)),
+                primary: Colors.blueGrey,
+                padding: EdgeInsets.all(AppLayout.getWidtht(10)),
+                backgroundColor: Colors.blue,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50)),
+                side: const BorderSide(
+                  color: Colors.blue,
+                  width: 0.0,
+                )),
+            child: Text(
+              "Find Tickets",
+              style: Styles.headLineStyle4.copyWith(color: Colors.white),
+            ),
+          ),
         ],
       ),
     );
