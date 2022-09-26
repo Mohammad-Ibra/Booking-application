@@ -209,7 +209,7 @@ class SearchScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "Take Love",
+                          "Rate Us",
                           style: Styles.headLineStyle2
                               .copyWith(color: Colors.white),
                         ),
