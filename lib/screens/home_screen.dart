@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         image: const DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/airplane.png"),
+                          image: AssetImage("assets/images/logo.png"),
                         ),
                       ),
                     )
