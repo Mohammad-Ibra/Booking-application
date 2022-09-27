@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:booking/utils/app_info_list.dart';
 import 'package:booking/utils/app_styles.dart';
 import 'package:booking/widgets/thick_container.dart';
